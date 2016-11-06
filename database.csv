@@ -1,0 +1,79 @@
+id,name,location,rating,cuisine,price,distance
+53,Buddha Bait,Beverly Hills,1,Korean,CHEAP,AVERAGE
+21,Buddha Bait,Beverly Hills,1,Indian,AVERAGE,AVERAGE
+86,Buddha Bite,Downtown,3,Mexican,CHEAP,AVERAGE
+27,Buddha Bite,Downtown,3,Korean,AVERAGE,AVERAGE
+49,Buddha Bite,Downtown,3,Indian,EXPENSIVE,AVERAGE
+107,Buddha Bowl,Downtown,2,Korean,EXPENSIVE,AVERAGE
+88,Doctor Coffee,Downtown,1,Italian,CHEAP,AVERAGE
+18,Doctor Coffee,Downtown,1,Chinese,AVERAGE,AVERAGE
+51,Doctor Coffee,Downtown,1,Mexican,CHEAP,AVERAGE
+6,Dolly Random,Beverly Hills,5,Indian,CHEAP,AVERAGE
+41,Dolly Random,Beverly Hills,5,Korean,EXPENSIVE,AVERAGE
+32,Domina,Beverly Hills,5,Chinese,CHEAP,AVERAGE
+55,Domina,Beverly Hills,5,Italian,AVERAGE,AVERAGE
+92,Domina,Beverly Hills,5,Mexican,AVERAGE,AVERAGE
+52,Guru,Beverly Hills,2,Mexican,CHEAP,AVERAGE
+66,Maple Thor,Beverly Hills,3,Mexican,EXPENSIVE,AVERAGE
+100,Mardi Grub,Beverly Hills,3,Korean,CHEAP,AVERAGE
+84,Marvane,Downtown,3,Indian,CHEAP,AVERAGE
+47,Marvane,Downtown,3,Chinese,EXPENSIVE,AVERAGE
+40,Masquerade,Downtown,4,Mexican,AVERAGE,AVERAGE
+77,Masquerade,Downtown,4,Italian,CHEAP,AVERAGE
+48,Antimatter,Santa Monica,1,Mexican,CHEAP,FAR
+85,Antimatter,Santa Monica,1,Indian,AVERAGE,FAR
+20,Antimatter,Santa Monica,1,Korean,CHEAP,FAR
+15,Aquafire,Marina Del Rey,3,Italian,AVERAGE,FAR
+82,Aquafire,Marina Del Rey,3,Korean,EXPENSIVE,FAR
+26,Django’s,Santa Monica,3,Korean,CHEAP,FAR
+81,Django’s,Santa Monica,3,Mexican,EXPENSIVE,FAR
+44,Django’s,Santa Monica,3,Italian,AVERAGE,FAR
+109,Donut District,Santa Monica,4,Indian,CHEAP,FAR
+72,Donut District,Santa Monica,4,Italian,CHEAP,FAR
+4,Donut District,Santa Monica,4,Chinese,AVERAGE,FAR
+76,Guru Planet,Santa Monica,5,Indian,CHEAP,FAR
+39,Guru Planet,Santa Monica,5,Chinese,AVERAGE,FAR
+14,Housedown,Santa Monica,2,Indian,AVERAGE,FAR
+101,Housedown,Santa Monica,2,Chinese,CHEAP,FAR
+74,Howzit Go Inn,Marina Del Rey,1,Korean,EXPENSIVE,FAR
+5,Howzit Go Inn,Marina Del Rey,1,Mexican,CHEAP,FAR
+65,Humburger,Marina Del Rey,3,Mexican,CHEAP,FAR
+102,Humburger,Marina Del Rey,3,Italian,EXPENSIVE,FAR
+11,Humburger,Marina Del Rey,3,Chinese,AVERAGE,FAR
+22,Jumpstart,Santa Monica,4,Italian,CHEAP,FAR
+61,Jumpstart,Santa Monica,4,Indian,AVERAGE,FAR
+98,Jumpstart,Santa Monica,4,Chinese,EXPENSIVE,FAR
+29,Jupiter Trolley,Marina Del Rey,2,Italian,CHEAP,FAR
+60,Jupiter Trolley,Marina Del Rey,2,Korean,AVERAGE,FAR
+99,Mantro,Marina Del Rey,4,Mexican,AVERAGE,FAR
+62,Mantro,Marina Del Rey,4,Italian,AVERAGE,FAR
+34,Mantro,Marina Del Rey,4,Korean,AVERAGE,FAR
+110,Martha’s Rump Roast,Marina Del Rey,5,Italian,EXPENSIVE,FAR
+73,Martha’s Rump Roast,Marina Del Rey,5,Mexican,AVERAGE,FAR
+111,Anocha,USC,3,Mexican,CHEAP,NEAR
+94,Anocha,USC,3,Indian,AVERAGE,NEAR
+59,Aquacine,Adams,1,Korean,CHEAP,NEAR
+19,Aquacine,Adams,1,Mexican,AVERAGE,NEAR
+12,Brunchilli,USC,3,Mexican,EXPENSIVE,NEAR
+67,Brunchilli,USC,3,Korean,AVERAGE,NEAR
+13,Donut Babe,Adams,2,Korean,EXPENSIVE,NEAR
+69,Dote,USC,4,Italian,AVERAGE,NEAR
+106,Dote,USC,4,Mexican,CHEAP,NEAR
+35,Dote,USC,4,Indian,CHEAP,NEAR
+80,Guru Cricket,Adams,5,Chinese,AVERAGE,NEAR
+28,Guru Cricket,Adams,5,Korean,CHEAP,NEAR
+43,Guru Cricket,Adams,5,Indian,AVERAGE,NEAR
+95,House of Chedder,USC,2,Italian,AVERAGE,NEAR
+33,House of Chedder,USC,2,Mexican,CHEAP,NEAR
+58,House of Chedder,USC,2,Chinese,EXPENSIVE,NEAR
+91,Jump Jack,USC,1,Chinese,CHEAP,NEAR
+54,Jump Jack,USC,1,Mexican,AVERAGE,NEAR
+7,Jump Jack,USC,1,Indian,EXPENSIVE,NEAR
+36,Jumpstack,USC,3,Italian,AVERAGE,NEAR
+93,Jupitor Place,Adams,4,Korean,AVERAGE,NEAR
+25,Jupitor Place,Adams,4,Chinese,AVERAGE,NEAR
+87,Jurassic Pork,Adams,2,Indian,EXPENSIVE,NEAR
+1,Jurassic Pork,Adams,2,Italian,CHEAP,NEAR
+105,Jute Box,Adams,5,Chinese,AVERAGE,NEAR
+68,Jute Box,Adams,5,Indian,CHEAP,NEAR
+8,Jute Box,Adams,5,Italian,AVERAGE,NEAR
