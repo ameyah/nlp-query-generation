@@ -1,0 +1,20 @@
+synonyms = {
+    'cheap': ['beanery', 'cheap', 'dump', 'inexpensive', 'low-priced', 'cheap', 'competitive', 'economical', 'low-cost',
+              'low-priced', 'low cost', 'low priced', 'reasonable', 'at a bargain', 'bargain', 'budget', 'cheapo',
+              'cost next to nothing', 'cut-price', 'cut-rate', 'easy on the pocket',
+              'easy on packet', 'half-priced', 'low tariff', 'lowered', 'marked down', 'popularly priced', 'reduced',
+              'slashed', 'standard', 'uncostly', 'affordable', 'cheapie',
+              'cut-price', 'cut-rate', 'dime-store', 'dirt cheap', 'el cheapo', 'low', 'low-end',
+              'reasonable', 'cheapish', 'discount', 'discounted', 'fire-sale', 'lowered',
+              'reduced', 'wholesale', 'supercheap', 'ultracheap', 'stingy', 'chintzy', 'closefisted', 'penny-pinching',
+              'sparingly priced', 'easy-priced', 'low-cost', 'soft-priced'],
+    'average': ['middle', 'intermediate', 'mean', 'median', 'medium', 'middling', 'midsize', 'midsized', 'moderate',
+                'modest', 'reasonable', 'common', 'commonplace', 'conventional', 'normal', 'regular', 'standard',
+                'typical', 'usual', 'adequate', 'passable', 'tolerable', 'normal', 'typical', 'mediocrestar',
+                'moderatestar', 'ordinarystar', 'regularstar', 'boilerplatestar', 'commonstar', 'commonplacestar',
+                'fairstar', 'familiarstar', 'gardenstar', 'generalstar', 'humdrumstar', 'intermediatestar',
+                'mainstreamstar', 'mediumstar', 'middlingstar', 'nowherestar tar', 'customarystar',
+                'everydaystar', 'so-sostar', 'so so', 'so so', 'undistinguishedstar', 'unexceptionalstar', 'usual',
+                'norm', 'normal', 'par', 'standard', 'golden', 'mean', 'mean', 'median', 'middle', 'commonplace',
+                'ordinary', 'status quo', 'usual', 'exemplar', 'representative']
+}
