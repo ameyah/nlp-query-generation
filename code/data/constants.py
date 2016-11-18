@@ -16,5 +16,6 @@ synonyms = {
                 'mainstreamstar', 'mediumstar', 'middlingstar', 'nowherestar tar', 'customarystar',
                 'everydaystar', 'so-sostar', 'so so', 'so so', 'undistinguishedstar', 'unexceptionalstar', 'usual',
                 'norm', 'normal', 'par', 'standard', 'golden', 'mean', 'mean', 'median', 'middle', 'commonplace',
-                'ordinary', 'status quo', 'usual', 'exemplar', 'representative']
+                'ordinary', 'status quo', 'usual', 'exemplar', 'representative'],
+    'expensive': []
 }
