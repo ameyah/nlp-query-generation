@@ -1,0 +1,78 @@
+@font-face {
+    font-family: OpenSansLight;
+    src: url(../fonts/OpenSans-Light.woff);
+}
+
+body {
+    font-family: OpenSansLight;
+}
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 600px;
+    margin: 10px auto;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#header h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#header img {
+    margin: 0 auto;
+    display: block;
+}
+
+#welcome-content {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#sortable {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #888888;
+    cursor: move;
+}
+
+#sortable li {
+    margin: 0 3px 3px 3px;
+    padding: 0.4em;
+    padding-left: 1.5em;
+    font-size: 1.4em;
+    height: 40px;
+    text-align: left;
+}
+
+#sortable li span {
+    position: absolute;
+    margin-left: -1.3em;
+}
+
+#preferences-form {
+    /*text-align: center;*/
+    /*margin-top: 50px;*/
+}
+
+#preferences-form h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#preferences-form td {
+    font-size: 20px;
+    padding: 5px;
+}
+
+table {
+    margin: 0 auto;
+}

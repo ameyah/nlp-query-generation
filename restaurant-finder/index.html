@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Finder</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <img src="images/logo.png" height="100" width="100">
+        <h1>Restaurant Finder</h1>
+    </div>
+    <div id="welcome-content">
+        <p class="first">Hi There!</p>
+        <p class="second">I can help you find restaurants.</p>
+        <button id="start" class="btn btn-primary" style="margin-top: 50px;">
+            <div style="font-size: 20px;">Lets get started...</div>
+        </button>
+    </div>
+
+    <div id="preferences-form" style="display: none">
+        <h1>Lets see your priorities:</h1>
+        <p>
+            <ul id="sortable">
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Price</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Cuisine</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Distance</li>
+            </ul>
+        </p>
+        <h1>And your preferences:</h1>
+        <p>
+            <table>
+                <tr>
+                    <td width="20%">Price:</td>
+                    <td>
+                        <label class="radio-inline"><input type="radio" name="preference-price">Cheap</label>
+                        <label class="radio-inline"><input type="radio" name="preference-price">Average</label>
+                        <label class="radio-inline"><input type="radio" name="preference-price">Expensive</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="20%">Cuisine:</td>
+                    <td>
+                        <label class="radio-inline"><input type="radio" name="preference-cuisine">Indian</label>
+                        <label class="radio-inline"><input type="radio" name="preference-cuisine">Italian</label>
+                        <label class="radio-inline"><input type="radio" name="preference-cuisine">Chinese</label>
+                        <label class="radio-inline"><input type="radio" name="preference-cuisine">Mexican</label>
+                        <label class="radio-inline"><input type="radio" name="preference-cuisine">Korean</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Distance:</td>
+                    <td>
+                        <label class="radio-inline"><input type="radio" name="preference-distance">Near</label>
+                        <label class="radio-inline"><input type="radio" name="preference-distance">Average</label>
+                        <label class="radio-inline"><input type="radio" name="preference-distance">Far</label>
+                    </td>
+                </tr>
+            </table>
+        </p>
+        <button id="send-preferences" class="btn btn-success pull-right">
+            <div style="font-size: 20px;">Done</div>
+        </button>
+    </div>
+</div>
+</body>
+
+</html>
