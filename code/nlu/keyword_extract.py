@@ -7,7 +7,7 @@ from include import rake
 
 
 def extract(text):
-    rake_object = rake.Rake("data/stopwords.txt", 3, 3, 1)
+    rake_object = rake.Rake("data/stopwords.txt")
     """
     Each word has at least 5 characters
     Each phrase has at most 3 words

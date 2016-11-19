@@ -1,4 +1,5 @@
 from nlu import keyword_approach
+# from nlu import NLU_Classification
 
 __author__ = 'Ameya'
 
@@ -28,7 +29,12 @@ class RestaurantServer():
         except sr.RequestError as e:
             print("Could not request results from Google Speech Recognition service; {0}".format(e))
         """
-        keyword_approach.get_structured_input("I want a restaurant with average price at near vicinity")
+        """
+        for training_sentence in NLU_Classification.training_statements:
+            print training_sentence[0]
+            keyword_approach.get_structured_input(training_sentence[0])
+        """
+        keyword_approach.get_structured_input("Give me list of restaurants")
 
 
 
