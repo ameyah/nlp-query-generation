@@ -21,6 +21,10 @@ def get_best_restaurants(result_data):
         if len(best_restaurants) < 2:
             best_restaurants.append(restaurant)
         else:
+            if best_restaurants[0]['rating'] > best_restaurants[1]['rating']:
+                temp_restaurant = best_restaurants[1]
+                best_restaurants[1] = best_restaurants[0]
+                best_restaurants[0] = temp_restaurant
             if best_restaurants[0]['rating'] < restaurant['rating']:
                 best_restaurants[0] = restaurant
             elif best_restaurants[1]['rating'] < restaurant['rating']:
