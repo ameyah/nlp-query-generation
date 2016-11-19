@@ -35,3 +35,18 @@ synonyms = {
 price_keywords = ['cheap', 'average', 'expensive']
 cuisine_keywords = ['indian', 'italian', 'korean', 'chinese', 'mexican']
 distance_keywords = ['near', 'far', 'average']
+
+# NLG templates
+request_price = "Are you looking for a cheap, average or expensive restaurant?"
+request_cuisine = "What cuisine would you prefer?"
+request_distance = "Are you looking for a restaurant which is near, far or at an average distance?"
+confirm = "So, would you like {} {} restaurant which is {}?"
+
+response_no_restaurants = "Sorry. We could not find any restaurants that match your preferences."
+response_restaurant_count = "I found {} that match your query."
+response_restaurant_name_single = "The only available restaurant is {} located at {}."
+response_restaurant_names = "The best ones as per service ratings are {} located at {} and {} located at {}."
+# However, we found 5 (chinese) restaurants (that are cheap)
+response_tradeoff_no_restaurant = "However, we found {} {} restaurants {}"
+# However, we also found 5 more (chinese) restaurants (that are cheap)
+response_tradeoff = "we also found {} more {} restaurants {}"
