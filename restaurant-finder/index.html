@@ -30,44 +30,47 @@
     <div id="preferences-form" style="display: none">
         <h1>Lets see your priorities:</h1>
         <p>
-            <ul id="sortable">
-                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Price</li>
-                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Cuisine</li>
-                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Distance</li>
-            </ul>
+        <ul id="sortable">
+            <li class="ui-state-default" id="priority-price"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Price
+            </li>
+            <li class="ui-state-default" id="priority-cuisine"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Cuisine
+            </li>
+            <li class="ui-state-default" id="priority-distance"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Distance
+            </li>
+        </ul>
         </p>
         <h1>And your preferences:</h1>
         <p>
-            <table>
-                <tr>
-                    <td width="20%">Price:</td>
-                    <td>
-                        <label class="radio-inline"><input type="radio" name="preference-price">Cheap</label>
-                        <label class="radio-inline"><input type="radio" name="preference-price">Average</label>
-                        <label class="radio-inline"><input type="radio" name="preference-price">Expensive</label>
-                    </td>
-                </tr>
+        <table>
+            <tr>
+                <td width="20%">Price:</td>
+                <td>
+                    <label class="radio-inline"><input type="radio" name="preference-price" value="cheap">Cheap</label>
+                    <label class="radio-inline"><input type="radio" name="preference-price" value="average">Average</label>
+                    <label class="radio-inline"><input type="radio" name="preference-price" value="expensive">Expensive</label>
+                </td>
+            </tr>
 
-                <tr>
-                    <td width="20%">Cuisine:</td>
-                    <td>
-                        <label class="radio-inline"><input type="radio" name="preference-cuisine">Indian</label>
-                        <label class="radio-inline"><input type="radio" name="preference-cuisine">Italian</label>
-                        <label class="radio-inline"><input type="radio" name="preference-cuisine">Chinese</label>
-                        <label class="radio-inline"><input type="radio" name="preference-cuisine">Mexican</label>
-                        <label class="radio-inline"><input type="radio" name="preference-cuisine">Korean</label>
-                    </td>
-                </tr>
+            <tr>
+                <td width="20%">Cuisine:</td>
+                <td>
+                    <label class="radio-inline"><input type="radio" name="preference-cuisine" value="indian">Indian</label>
+                    <label class="radio-inline"><input type="radio" name="preference-cuisine" value="italian">Italian</label>
+                    <label class="radio-inline"><input type="radio" name="preference-cuisine" value="chinese">Chinese</label>
+                    <label class="radio-inline"><input type="radio" name="preference-cuisine" value="mexican">Mexican</label>
+                    <label class="radio-inline"><input type="radio" name="preference-cuisine" value="korean">Korean</label>
+                </td>
+            </tr>
 
-                <tr>
-                    <td>Distance:</td>
-                    <td>
-                        <label class="radio-inline"><input type="radio" name="preference-distance">Near</label>
-                        <label class="radio-inline"><input type="radio" name="preference-distance">Average</label>
-                        <label class="radio-inline"><input type="radio" name="preference-distance">Far</label>
-                    </td>
-                </tr>
-            </table>
+            <tr>
+                <td>Distance:</td>
+                <td>
+                    <label class="radio-inline"><input type="radio" name="preference-distance" value="near">Near</label>
+                    <label class="radio-inline"><input type="radio" name="preference-distance" value="average">Average</label>
+                    <label class="radio-inline"><input type="radio" name="preference-distance" value="far">Far</label>
+                </td>
+            </tr>
+        </table>
         </p>
         <button id="send-preferences" class="btn btn-success pull-right">
             <div style="font-size: 20px;">Done</div>
