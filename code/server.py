@@ -1,7 +1,6 @@
 from nlu import keyword_approach
 # from nlu import NLU_Classification
-
-__author__ = 'Ameya'
+from BaseHTTPServer import HTTPServer
 
 
 class RestaurantServer():
@@ -34,8 +33,14 @@ class RestaurantServer():
             print training_sentence[0]
             keyword_approach.get_structured_input(training_sentence[0])
         """
-        keyword_approach.get_structured_input("Give me list of restaurants")
-
+        # keyword_approach.get_structured_input("Give me list of restaurants")
+        server_address = ('127.0.0.1', 8080)
+        from request_handler import HTTPRequestHandlerContainer
+        HTTPHandlerClass = HTTPRequestHandlerContainer()
+        httpd = HTTPServer(server_address, HTTPHandlerClass)
+        # httpd.socket = ssl.wrap_socket(httpd.socket, certfile='cert/server.crt', server_side=True, keyfile='cert/server.key')
+        print('http server is running...')
+        httpd.serve_forever()
 
 
 if __name__ == '__main__':

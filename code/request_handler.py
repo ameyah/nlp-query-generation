@@ -4,8 +4,6 @@ from controllers import Controllers
 import include.util as utils
 import MySQLdb
 
-__author__ = 'Ameya'
-
 
 def HTTPRequestHandlerContainer():
 

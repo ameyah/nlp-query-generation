@@ -1,7 +1,3 @@
-/**
- * Created by ameya on 11/19/16.
- */
-
 $(document).ready(function () {
     /*$("#content").animate({top:'100px'}, "slow");
     console.log('sds');
