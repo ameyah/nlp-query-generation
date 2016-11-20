@@ -71,6 +71,11 @@ def get_structured_input(text_input):
         'distance': None,
         'confirm': None
     }
+
+    if "yes" in formatted_keywords:
+        request_info_dict['confirm'] = True
+    elif "no" in formatted_keywords:
+        request_info_dict['confirm'] = False
     # check for price & location
     # check for price
     if "cheap" in formatted_keywords:

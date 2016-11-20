@@ -30,7 +30,11 @@ synonyms = {
             'off', 'away', 'extreme door'],
     'distance': ['area', 'gap', 'length', 'orbit', 'radius', 'size', 'space ', 'span ', 'width ', 'bit', 'breadth',
                  'extension', 'extent', 'farness', 'horizon', 'outskirts', 'provinces', 'reach', 'remoteness', 'spread',
-                 'way', 'country', 'location', 'vicinity', 'located', 'proximity']
+                 'way', 'country', 'location', 'vicinity', 'located', 'proximity'],
+    'yes': ['yeah', 'yea', 'ya', 'yup', 'affirmative', 'good', 'fine', 'ok', 'okay', 'kay', 'true', 'all right', 'aye',
+            'roger that', 'certainly', 'definitely', 'exactly', 'positive', 'positively', 'precise', 'precisely',
+            'of course', 'sure', 'undoubtedly'],
+    'no': ['nope']
 }
 price_keywords = ['cheap', 'average', 'expensive']
 cuisine_keywords = ['indian', 'italian', 'korean', 'chinese', 'mexican']
