@@ -60,18 +60,19 @@ def response_action(result_data, tradeoff_factor, tradeoff_data):
         else:
             response += constants.response_tradeoff.format(len(tradeoff_data), tradeoff_data[0]['cuisine'], "")
     else:
-        restaurant_tradeoff_type_str = ""
-        if tradeoff_data[0][tradeoff_factor] == "average":
-            if tradeoff_factor == "price":
-                restaurant_tradeoff_type_str = "average priced"
-            elif tradeoff_factor == "distance":
-                restaurant_tradeoff_type_str = "at an average distance"
-        else:
-            restaurant_tradeoff_type_str = tradeoff_data[0][tradeoff_factor]
-        if total_restaurants == 0:
-            response += constants.response_tradeoff_no_restaurant.format(len(tradeoff_data),
-                                                                         "", "that are " + restaurant_tradeoff_type_str)
-        else:
-            response += constants.response_tradeoff.format(len(tradeoff_data),
-                                                                         "", "that are " + restaurant_tradeoff_type_str)
+        if tradeoff_data:
+            restaurant_tradeoff_type_str = ""
+            if tradeoff_data[0][tradeoff_factor] == "average":
+                if tradeoff_factor == "price":
+                    restaurant_tradeoff_type_str = "average priced"
+                elif tradeoff_factor == "distance":
+                    restaurant_tradeoff_type_str = "at an average distance"
+            else:
+                restaurant_tradeoff_type_str = tradeoff_data[0][tradeoff_factor]
+            if total_restaurants == 0:
+                response += constants.response_tradeoff_no_restaurant.format(len(tradeoff_data),
+                                                                             "", "that are " + restaurant_tradeoff_type_str)
+            else:
+                response += constants.response_tradeoff.format(len(tradeoff_data),
+                                                                             "", "that are " + restaurant_tradeoff_type_str)
     return response
