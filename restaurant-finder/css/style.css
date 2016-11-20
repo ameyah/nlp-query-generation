@@ -76,3 +76,7 @@ body {
 table {
     margin: 0 auto;
 }
+
+#search-tool {
+    margin-top: 50px;
+}
