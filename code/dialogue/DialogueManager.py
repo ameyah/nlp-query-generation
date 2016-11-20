@@ -39,9 +39,10 @@ class DialogueManager:
 
     def generate_result(self, user_input):
         self.input_string_from_user = user_input
-        nlu_info_dict = NLU_Classification.get_label(global_project_settings.classifier, self.input_string_from_user)
+        nlu_info_array = NLU_Classification.get_label(global_project_settings.classifier, self.input_string_from_user)
         if self.confirm_flag:
-            if nlu_info_dict['confirm'] == True:
+        	#need to be changed
+            if nlu_info_array[1] == True:
                 main_results = self.get_results(self.request_info_dict)
                 tradeoff_factor = self.check_tradeoff_factor(self.request_info_dict, self.priorities)
                 tradeoff_results = None
@@ -53,8 +54,14 @@ class DialogueManager:
                     tradeoff_results = self.get_results(tradeoff_request_dict)
                 result_str = response_action.response_action(main_results, tradeoff_results)
                 return result_str
+            else :
+                self.confirm_flag = False
+                for key in self.request_info_dict:
+                	self.request_info_dict[key] = None
+                for key in nlu_info_dict:
+                	nlu_info_array[1] = None
         print self.request_info_dict
-        self.request_info_dict = self.compare_dictionaries(self.request_info_dict, nlu_info_dict)
+        self.request_info_dict = self.compare_dictionaries(self.request_info_dict, nlu_info_array)
         print self.request_info_dict
         self.request_info_dict = self.set_preferences(self.request_info_dict)
         print self.request_info_dict
@@ -74,10 +81,9 @@ class DialogueManager:
 
     @staticmethod
     def compare_dictionaries(main_data, new_data):
-        for key in new_data:
-            if new_data[key]:
-                main_data[key] = new_data[key]
-                userDictionaryConfirmConfirm[key] = 'filled'
+        
+        main_data[new_data[0]] = new_data[1]
+        userDictionaryConfirmConfirm[key] = 'filled'
         return main_data
 
     def set_preferences(self, request_info_dict):
