@@ -1,0 +1,115 @@
+I want some information on korean restaurants.	korean
+Tell me about the korean restaurants you know about.	korean
+List some korean restaurants.	korean
+Can you find me some korean restaurants.	korean
+What korean restaurants do you know about	korean
+How about some korean restaurants	korean
+Do you know about korean restaurants	korean
+Which restaurants serve korean food	korean
+I would like to know about restaurants serving korean type of food.	korean
+Find me some korean restaurants.	korean
+I want some information on indian restaurants.	indian
+Tell me about the indian restaurants you know about.	indian
+List some indian restaurants.	indian
+Can you find me some indian restaurants.	indian
+What indian restaurants do you know about	indian
+How about some indian restaurants	indian
+Do you know about indian restaurants	indian
+Which restaurants serve indian food	indian
+I would like to know about restaurants serving indian type of food.	indian
+Find me some indian restaurants.	indian
+I want some information on italian restaurants.	italian
+Tell me about the italian restaurants you know about.	italian
+List some italian restaurants.	italian
+Can you find me some italian restaurants.	italian
+What italian restaurants do you know about	italian
+How about some italian restaurants	italian
+Do you know about italian restaurants	italian
+Which restaurants serve italian food	italian
+I would like to know about restaurants serving italian type of food.	italian
+Find me some italian restaurants.	italian
+I want some information on chinese restaurants.	chinese
+Tell me about the chinese restaurants you know about.	chinese
+List some chinese restaurants.	chinese
+Can you find me some chinese restaurants.	chinese
+What chinese restaurants do you know about	chinese
+How about some chinese restaurants	chinese
+Do you know about chinese restaurants	chinese
+Which restaurants serve chinese food	chinese
+I would like to know about restaurants serving chinese type of food.	chinese
+Find me some chinese restaurants.	chinese
+I want some information on mexican restaurants.	mexican
+Tell me about the mexican restaurants you know about.	mexican
+List some mexican restaurants.	mexican
+Can you find me some mexican restaurants.	mexican
+What mexican restaurants do you know about	mexican
+How about some mexican restaurants	mexican
+Do you know about mexican restaurants	mexican
+Which restaurants serve mexican food	mexican
+I would like to know about restaurants serving mexican type of food.	mexican
+Find me some mexican restaurants.	mexican
+I want some cheap restaurants.	cheap
+Which restaurants are cheap 	cheap
+Only give me all cheap hotels	cheap
+Food places that are cheap priced	cheap
+Can i have restaurants that are cheap	cheap
+Find me some cheap restaurants	cheap
+Need a place which provides cheap food pricing 	cheap
+Tell me about some cheap restaurants.	cheap
+Search me some cheap restaurants.	cheap
+Tell me Restaurants that are popularly priced.	cheap
+Find some easy on pocket restaurants	cheap
+Show me details of some low tariff restaurants	cheap
+Search for some easy on pocket restaurants	cheap
+Search some sparingly priced restaurants for me	cheap
+Any restaurants with marked down prices	cheap
+Search for some restaurants at a bargain price	cheap
+show me restaurants that have marked down prices	cheap
+low-priced cheap competitive economical low-cost low-priced reasonable bargain bargain-basement bargain-counter budget cheapo cost cut-price cut-rate depreciated half-priced lowered reduced slashed standard uncostly affordable bargain-basement cheapie cheapo chintzy cut-price cut-rate dime-store dirt cheap el cheapo low price low-end popular reasonable cheapish moderate discount discounted fire-sale lowered reduced wholesale supercheap ultracheap stingy chintzy closefisted penny-pinching easy-priced soft-priced	cheap
+I want some average restaurants.	average
+Which restaurants are average 	average
+Only give me all average hotels	average
+Food places that are average priced	average
+Can i have restaurants that are average	average
+Find me some average restaurants	average
+Need a place which provides average food pricing	average
+average nice restaurants	average
+Search me some average restaurants.	average
+acceptable equitable fair feasible honest humane impartial judicious justifiable legitimate modest plausible proper prudent rational restrained sane sensible understandable valid analytical average circumspect conservative controlled discreet Legit making sense okay right sound within reasonable limit curbed disciplined inhibited restrained calculated deliberate measured levelheaded rational reasonable sensible mediocre medium modest so-so; normal ordinary regular routine typical usual	average
+Tell me about some average restaurants.	average
+Are there any average restaurants	average
+I want some expensive restaurants.	expensive
+Which restaurants are expensive	expensive
+Only give me all expensive hotels	expensive
+Food places that are expensive priced	expensive
+Can i have restaurants that are expensive	expensive
+Find me some expensive restaurants	expensive
+Need a place which provides expensive food pricing	expensive
+Tell me about some expensive restaurants.	expensive
+Search me some expensive restaurants.	expensive
+Any restaurants with too high cost	expensive
+costly extravagant fancy high lavish overpriced pricey upscale valuable premium big-ticket excessive exorbitant holdup immoderate inordinate plush posh rich ritzy sky-high steep stiff swank	expensive
+I want to know about restaurants located near short close nearby closeby convenient neighboring me.	near
+Tell me about restaurants located approximately less then 10 miles close short nearby closeby convenient neighboring away from here.	near
+Find me some restaurants located near or moderately near short close nearby closeby convenient neighboring from here.	near
+Okay tell me about restaurants near close nearby closeby short convenient neighboring distance from here.	near
+Give me neighboring near close nearby closeby convenient short food places	near
+What are next close nearby closeby convenient near short neighboring door restaurants for me	near
+Give me in close nearby closeby convenient near short neighboring proximity restaurants	near
+Give near close nearby closeby convenient neighboring short list of restaurants	near
+I want to know about restaurants located average fair intermediate medial mediocre midway centre me.	fair
+Tell me about restaurants located approximately less then 20 MILES fair intermediate medial mediocre midway centre away from here.	fair
+Find me some restaurants located average or moderately average fair intermediate medial mediocre midway centre from here.	fair
+Okay tell me about restaurants average fair intermediate medial mediocre midway centre distance from here.	fair
+Give me fair intermediate medial mediocre midway centre food places	fair
+What are further from next door fair intermediate medial mediocre midway centre restaurants for me	fair
+Give me in average fair intermediate medial mediocre midway centre proximity restaurants	fair
+Give fair intermediate medial mediocre midway centre list of restaurants	fair
+I want to know about restaurants located far distant remote far-flung outlaying outlier long way miles afar off me.	far
+Tell me about restaurants located approximately more then 30 MILES distant remote far-flung outlaying outlier long way miles afar off away from here.	far
+Find me some restaurants located far distant remote far-flung outlaying outlier long way miles afar off or moderately far from here.	far
+Okay tell me about restaurants away distant remote far-flung outlaying outlier long way miles afar off from here.	far
+Give me far distant remote far-flung outlaying outlier long way miles afar off food places	far
+What are extreme door distant remote far-flung outlaying outlier long way miles afar off restaurants for me	far
+Give me in far distant remote far-flung outlaying outlier long way miles afar off proximity restaurants	far
+Give far distant remote far-flung outlaying outlier long way miles afar off list of restaurants	far
