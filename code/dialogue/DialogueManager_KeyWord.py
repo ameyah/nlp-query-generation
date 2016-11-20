@@ -56,6 +56,7 @@ class DialogueManager:
                     tradeoff_request_dict[tradeoff_factor] = self.preferences[tradeoff_factor]
                     tradeoff_results = self.get_results(tradeoff_request_dict)
                 result_str = response_action.response_action(main_results, tradeoff_factor, tradeoff_results)
+                self.confirm_flag=False
                 return result_str
             else :
                 self.confirm_flag = False
