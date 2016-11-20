@@ -55,7 +55,7 @@ class DialogueManager:
                         tradeoff_request_dict[key] = self.request_info_dict[key]
                     tradeoff_request_dict[tradeoff_factor] = self.preferences[tradeoff_factor]
                     tradeoff_results = self.get_results(tradeoff_request_dict)
-                result_str = response_action.response_action(main_results, tradeoff_results)
+                result_str = response_action.response_action(main_results, tradeoff_factor, tradeoff_results)
                 return result_str
         self.request_info_dict = self.compare_dictionaries(self.request_info_dict, nlu_info_dict)
         self.request_info_dict = self.set_preferences(self.request_info_dict)
@@ -93,14 +93,18 @@ class DialogueManager:
     def check_tradeoff_factor(self, request_info_dict, priorities):
         for priority in priorities:
             if request_info_dict[priority] != self.preferences[priority]:
-                return priority
+                if self.preferences[priority] :
+                    return priority
 
     def get_results(self, request_info_dict):
-        query = "SELECT name, location, rating, cuisine, price, distance from restaurants where cuisine = {} and \
-                distance = {} and price = {}"
-        query = query.format(request_info_dict['cuisine'], request_info_dict['distance'], request_info_dict['price'])
+        print request_info_dict
+        query = "SELECT name, location, rating, cuisine, price, distance from restaurants where cuisine = '{}' and \
+                distance = '{}' and price = '{}'"
+        query = query.format(request_info_dict['cuisine'].title(), request_info_dict['distance'].upper(), request_info_dict['price'].upper())
         cursor = self.db_connection.get_cursor()
+        print "Query:" + query
         cursor.execute(query)
         response = cursor.fetchall()
+        print response
         cursor.close()
         return response
