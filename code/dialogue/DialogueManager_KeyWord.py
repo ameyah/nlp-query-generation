@@ -27,7 +27,11 @@ class DialogueManager:
         }
         self.priorities = []
         self.input_string_from_user = ""
-        self.request_info_dict = {}
+        self.request_info_dict = {
+            'price': None,
+            'cuisine': None,
+            'distance': None
+        }
         self.confirm_flag = False
 
     def store_preferences(self, preferences_priorities_dict):
@@ -51,11 +55,8 @@ class DialogueManager:
                     tradeoff_results = self.get_results(tradeoff_request_dict)
                 result_str = response_action.response_action(main_results, tradeoff_results)
                 return result_str
-        print self.request_info_dict
         self.request_info_dict = self.compare_dictionaries(self.request_info_dict, nlu_info_dict)
-        print self.request_info_dict
         self.request_info_dict = self.set_preferences(self.request_info_dict)
-        print self.request_info_dict
         while True:
             required_data = self.request_info()
             if required_data:
