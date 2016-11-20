@@ -11,6 +11,7 @@ from nlg import confirm_action
 from nlg import request_info as request_info_nlg
 from nlg import response_action
 from include import utils
+from include import db_conn
 
 
 class DialogueManager:
@@ -33,6 +34,7 @@ class DialogueManager:
             'distance': None
         }
         self.confirm_flag = False
+        self.db_connection = db_conn.DbConnection()
 
     def store_preferences(self, preferences_priorities_dict):
         for preference in preferences_priorities_dict['preferences']:
@@ -93,18 +95,11 @@ class DialogueManager:
             if request_info_dict[priority] != self.preferences[priority]:
                 return priority
 
-    @staticmethod
-    def get_results(request_info_dict):
-        credentials = utils.dbcredentials(os.path.abspath(__file__))
-        connection = MySQLdb.connect(host=credentials["host"],  # your host, usually localhost
-                                     user=credentials["user"],  # your username
-                                     passwd=credentials["password"],  # your password
-                                     db=credentials["db"],
-                                     cursorclass=MySQLdb.cursors.SSDictCursor)  # stores result in the server. records as dict
+    def get_results(self, request_info_dict):
         query = "SELECT name, location, rating, cuisine, price, distance from restaurants where cuisine = {} and \
                 distance = {} and price = {}"
         query = query.format(request_info_dict['cuisine'], request_info_dict['distance'], request_info_dict['price'])
-        cursor = connection.cursor()
+        cursor = self.db_connection.get_cursor()
         cursor.execute(query)
         response = cursor.fetchall()
         cursor.close()
