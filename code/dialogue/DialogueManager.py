@@ -113,6 +113,7 @@ class DialogueManager:
         query = "SELECT name, location, rating, cuisine, price, distance from restaurants where cuisine = {} and \
                 distance = {} and price = {}"
         query = query.format(request_info_dict['cuisine'], request_info_dict['distance'], request_info_dict['price'])
+        print "Query:" + query
         cursor = connection.cursor()
         cursor.execute(query)
         response = cursor.fetchall()

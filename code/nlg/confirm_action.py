@@ -9,15 +9,15 @@ from data import constants
 def confirm_action(confirm_dict):
     # sanitize price
     if confirm_dict['price'] == "cheap":
-        confirm_dict['price'] = "a cheap"
+        price = "a cheap"
     elif confirm_dict['price'] == "average":
-        confirm_dict['price'] = "an average priced"
+        price = "an average priced"
     elif confirm_dict['price'] == "expensive":
-        confirm_dict['price'] = "an expensive"
-
+       price = "an expensive"
+    distance = confirm_dict["distance"]
     if confirm_dict['distance'] == "average":
-        confirm_dict['distance'] = "at an average distance"
-    return constants.confirm.format(confirm_dict['price'], confirm_dict['cuisine'], confirm_dict['distance'])
+        distance = "at an average distance"
+    return constants.confirm.format(price, confirm_dict['cuisine'], distance)
 
 
 # confirm_action({'price': 'average', 'distance': 'far', 'cuisine': 'chinese'})
