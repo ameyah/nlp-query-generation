@@ -6,10 +6,10 @@ os.sys.path.insert(0, parentdir)
 from data import constants
 
 
-def request_info(request_info_dict):
-    if not request_info_dict['price']:
+def request_info(attribute):
+    if attribute == "price":
         return constants.request_price
-    if not request_info_dict['cuisine']:
+    if attribute == "cuisine":
         return constants.request_cuisine
-    if not request_info_dict['distance']:
+    if attribute == "distance":
         return constants.request_distance

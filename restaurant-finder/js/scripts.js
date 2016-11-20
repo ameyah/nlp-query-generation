@@ -1,5 +1,10 @@
 var baseURL = "http://localhost:8080/";
 
+var msg_speech = new SpeechSynthesisUtterance();
+var recognition = new webkitSpeechRecognition();
+recognition.continuous = true;
+recognition.interimResults = true;
+
 $(document).ready(function () {
     /*$("#content").animate({top:'100px'}, "slow");
     console.log('sds');
@@ -34,9 +39,6 @@ $(document).ready(function () {
             $("#preferences-form").hide();
             $("#search-tool").show();
             textToSpeech('How may I help you?');
-            setTimeout(function () {
-                startSpeechRecognition();
-            }, 1700);
         };
         
         var detailsFailure = function () {
@@ -44,40 +46,58 @@ $(document).ready(function () {
         };
         __makeAjaxRequest(options, detailsSuccess, detailsFailure);
     });
+    
+    
+    $("#start-speech").click(function () {
+        startSpeechRecognition();
+    });
+
+    $("#get-results").click(function () {
+        var resultText = $("#search-text");
+        if(resultText != "") {
+            getRequestResults(resultText);
+        }
+    });
 
     function startSpeechRecognition() {
         recognition.start();
     }
 
-    function textToSpeech(text) {
-        var msg = new SpeechSynthesisUtterance(text);
-        window.speechSynthesis.speak(msg);
+    function stopSpeechRecognition() {
+        recognition.abort();
     }
 
-    var recognition = new webkitSpeechRecognition();
-    recognition.continuous = true;
-    recognition.interimResults = true;
+    function textToSpeech(text) {
+        msg_speech.text = text;
+        window.speechSynthesis.speak(msg_speech);
+    }
+
+    function getRequestResults(resultText) {
+        stopSpeechRecognition();
+        var options = {
+            type: "POST",
+            url: baseURL + "getresults",
+            data: resultText
+        };
+
+        var detailsSuccess = function (data) {
+            if(typeof data == "string") {
+                textToSpeech(data);
+            }
+        };
+
+        var detailsFailure = function () {
+
+        };
+        __makeAjaxRequest(options, detailsSuccess, detailsFailure);
+    }
+
     recognition.onresult = function(event) {
         var resultText = event.results["0"]["0"].transcript;
         $("#search-text").val(resultText);
         var isFinal = event.results["0"].isFinal;
         if(isFinal) {
-            var options = {
-                type: "POST",
-                url: baseURL + "getresults",
-                data: resultText
-            };
-
-            var detailsSuccess = function () {
-                $("#preferences-form").hide();
-                $("#search-tool").show();
-                startSpeechRecognition();
-            };
-
-            var detailsFailure = function () {
-
-            };
-            __makeAjaxRequest(options, detailsSuccess, detailsFailure);
+            getRequestResults(resultText);
         }
     };
 

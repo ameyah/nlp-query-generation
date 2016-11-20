@@ -43,7 +43,8 @@ def HTTPRequestHandlerContainer():
                         self.send_bad_request_response()
                         return
                     if user_input != '':
-                        dialogue_manager.generate_result(user_input)
+                        result = dialogue_manager.generate_result(user_input)
+                        self.send_ok_response(data=result)
 
         # handle GET command
         def do_GET(self):

@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
@@ -78,13 +79,14 @@
     </div>
 
     <div id="search-tool" style="display: none;">
-        <div class="form-group">
-            <div class="col-md-10">
+        <div class="col-md-10">
+            <div class="input-group">
                 <input type="text" class="form-control" id="search-text">
+                <span class="input-group-addon" id="start-speech"><i class="fa fa-microphone"></i> </span>
             </div>
-            <div class="col-md-2">
-                <button class="btn btn-primary">Go!</button>
-            </div>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary" id="get-results">Go!</button>
         </div>
     </div>
 </div>
