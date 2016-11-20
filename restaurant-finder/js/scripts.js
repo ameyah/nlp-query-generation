@@ -2,17 +2,17 @@ var baseURL = "http://localhost:8080/";
 
 $(document).ready(function () {
     /*$("#content").animate({top:'100px'}, "slow");
-     console.log('sds');
+    console.log('sds');
 
-     $("#button").click(function () {
-     $("#content").animate({left:'-105px'}, 5000);
-     })*/
+    $("#button").click(function () {
+        $("#content").animate({left:'-105px'}, 5000);
+    })*/
 
     $("#start").click(function () {
         $("#welcome-content").hide(1000);
         $("#preferences-form").show(1000);
     });
-
+    
     $("#send-preferences").click(function () {
         var priorities = $("#sortable").sortable("toArray");
         for(var i = 0; i <priorities.length; i++) {
@@ -33,17 +33,25 @@ $(document).ready(function () {
         var detailsSuccess = function () {
             $("#preferences-form").hide();
             $("#search-tool").show();
-            startSpeechRecognition();
+            textToSpeech('How may I help you?');
+            setTimeout(function () {
+                startSpeechRecognition();
+            }, 1700);
         };
-
+        
         var detailsFailure = function () {
-
+            
         };
         __makeAjaxRequest(options, detailsSuccess, detailsFailure);
     });
 
     function startSpeechRecognition() {
         recognition.start();
+    }
+
+    function textToSpeech(text) {
+        var msg = new SpeechSynthesisUtterance(text);
+        window.speechSynthesis.speak(msg);
     }
 
     var recognition = new webkitSpeechRecognition();

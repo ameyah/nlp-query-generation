@@ -1,13 +1,12 @@
 from BaseHTTPServer import BaseHTTPRequestHandler
 import json
-from controllers import Controllers
 from include import utils
-import MySQLdb
+from dialogue import DialogueManager_KeyWord
 
 
 def HTTPRequestHandlerContainer():
 
-    controller = Controllers()
+    dialogue_manager = DialogueManager_KeyWord.DialogueManager()
 
     class HTTPRequestHandler(BaseHTTPRequestHandler):
 
@@ -27,27 +26,27 @@ def HTTPRequestHandlerContainer():
                     except TypeError as e:
                         self.send_bad_request_response()
                     if preferences:
-                        controller.save_preferences(preferences)
+                        dialogue_manager.store_preferences(preferences)
 
                     self.send_ok_response()
                 else:
                     self.send_bad_request_response()
             elif "/getresults" in self.path:
                 postvars = utils.get_post_data(self.headers, self.rfile)
+                user_input = ''
                 if postvars != '':
-                    pass
+                    try:
+                        for key in postvars:
+                            user_input = key
+                            break
+                    except TypeError as e:
+                        self.send_bad_request_response()
+                        return
+                    if user_input != '':
+                        dialogue_manager.generate_result(user_input)
 
         # handle GET command
         def do_GET(self):
-            try:
-                if "/online" in self.path:
-                    self.send_ok_response(data=1)
-                else:
-                    self.send_bad_request_response()
-            except MySQLdb.Error as e:
-                print e
-                print "exception"
-
             return
 
         def send_ok_response(self, **kwargs):

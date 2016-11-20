@@ -68,7 +68,8 @@ def get_structured_input(text_input):
     request_info_dict = {
         'price': None,
         'cuisine': None,
-        'distance': None
+        'distance': None,
+        'confirm': None
     }
     # check for price & location
     # check for price
@@ -99,4 +100,4 @@ def get_structured_input(text_input):
         if cuisine in formatted_keywords:
             request_info_dict['cuisine'] = cuisine
 
-    print request_info_dict
+    return request_info_dict
