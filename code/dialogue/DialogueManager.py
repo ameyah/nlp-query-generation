@@ -18,9 +18,9 @@ from include import utils
 class DialogueManager:
     def __init__(self):
         self.userDictionaryConfirmConfirm = {
-            'price': [None,None],
-            'cuisine': [None,None],
-            'distance': [None,None]
+            'price': None,
+            'cuisine': None,
+            'distance': None
         }
         self.preferences = {
             'price': None,
@@ -67,17 +67,17 @@ class DialogueManager:
                 break
         print 'To be confirmed ---'
         print self.request_info_dict
-        confirm_str = confirm_action.confirm_action_clasififaction(self.request_info_dict[required_data])
+        confirm_str = confirm_action.confirm_action_clasififaction(self.userDictionaryConfirmConfirm)
 
-        self.confirm_flag = self.check_for_confirm_value(self.request_info_dict)
+        self.confirm_flag = self.check_for_confirm_value(self.userDictionaryConfirmConfirm)
         return confirm_str
 
     @staticmethod
     def compare_dictionaries(main_data, new_data):
         for key in new_data:
             if new_data[key]:
-                main_data[key][0] = new_data[key]
-                main_data[key][1] = 'filled'
+                main_data[key] = new_data[key]
+                userDictionaryConfirmConfirm[key] = 'filled'
         return main_data
 
     def set_preferences(self, request_info_dict):
@@ -98,7 +98,7 @@ class DialogueManager:
 
     def check_for_confirm_value(self, main_dic):
     	for key in main_dic:
-    		if (main_dic[key][1]=='filled' or main_dic[key][1]==None )
+    		if (userDictionaryConfirmConfirm[key]=='filled' or userDictionaryConfirmConfirm[key]==None )
     			return False
     	return True
 
