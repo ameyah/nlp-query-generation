@@ -29,10 +29,13 @@ def HTTPRequestHandlerContainer():
                     if preferences:
                         controller.save_preferences(preferences)
 
-                    # result = controller.insert_prestudy_answers(postvars)
                     self.send_ok_response()
                 else:
                     self.send_bad_request_response()
+            elif "/getresults" in self.path:
+                postvars = utils.get_post_data(self.headers, self.rfile)
+                if postvars != '':
+                    pass
 
         # handle GET command
         def do_GET(self):
