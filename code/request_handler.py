@@ -20,14 +20,14 @@ def HTTPRequestHandlerContainer():
             if "/preferences" in self.path:
                 postvars = utils.get_post_data(self.headers, self.rfile)
                 if postvars != '':
-                    priorities = None
+                    preferences = None
                     try:
                         for key in postvars:
-                            priorities = json.loads(key)
+                            preferences = json.loads(key)
                     except TypeError as e:
                         self.send_bad_request_response()
-                    if priorities:
-                        pass
+                    if preferences:
+                        controller.save_preferences(preferences)
 
                     # result = controller.insert_prestudy_answers(postvars)
                     self.send_ok_response()
