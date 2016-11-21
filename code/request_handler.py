@@ -6,7 +6,7 @@ from dialogue import DialogueManager_KeyWord
 
 def HTTPRequestHandlerContainer():
 
-    dialogue_manager = DialogueManager_KeyWord.DialogueManager()
+    dialogue_manager=None
 
     class HTTPRequestHandler(BaseHTTPRequestHandler):
 
@@ -17,6 +17,8 @@ def HTTPRequestHandlerContainer():
         def do_POST(self):
             print self.path
             if "/preferences" in self.path:
+                global dialogue_manager
+                dialogue_manager = DialogueManager_KeyWord.DialogueManager()
                 postvars = utils.get_post_data(self.headers, self.rfile)
                 if postvars != '':
                     preferences = None

@@ -57,7 +57,15 @@ class DialogueManager:
                     tradeoff_request_dict[tradeoff_factor] = self.preferences[tradeoff_factor]
                     tradeoff_results = self.get_results(tradeoff_request_dict)
                 result_str = response_action.response_action(main_results, tradeoff_factor, tradeoff_results)
+                self.confirm_flag = False
                 return {"text": result_str, "main_results": main_results, "tradeoff_results": tradeoff_results}
+            else:
+                self.confirm_flag = False
+                for key in self.request_info_dict:
+                    self.request_info_dict[key] = None
+                for key in nlu_info_dict:
+                    nlu_info_dict[key] = None
+
         self.request_info_dict = self.compare_dictionaries(self.request_info_dict, nlu_info_dict)
         self.request_info_dict = self.set_preferences(self.request_info_dict)
         while True:
