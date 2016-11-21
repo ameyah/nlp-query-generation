@@ -111,9 +111,9 @@ def getLabel(classifier, statement):
         category = "cuisine"
     elif label in global_project_settings.price_list:
         category = "price"
-    elif label in global_project_settings.star_list:
-        category = "star"
-    else:
+    elif label in global_project_settings.location_list:
         category = "location"
-        
+    else:
+        category = "confirm"
+
     return [category, label]
