@@ -44,7 +44,7 @@ def HTTPRequestHandlerContainer():
                         return
                     if user_input != '':
                         result = dialogue_manager.generate_result(user_input)
-                        self.send_ok_response(data=result)
+                        self.send_ok_response(data=json.dumps(result))
 
         # handle GET command
         def do_GET(self):

@@ -41,18 +41,17 @@ def response_action(result_data, tradeoff_factor, tradeoff_data):
             restaurant_count_str = "1 restaurant"
         else:
             restaurant_count_str = str(total_restaurants) + " restaurants"
-        best_restaurants = get_best_restaurants(result_data)
-        if len(best_restaurants) == 1:
+        # best_restaurants = get_best_restaurants(result_data)
+        if len(result_data) == 1:
             response = constants.response_restaurant_count.format(
-                restaurant_count_str) + constants.response_restaurant_name_single.format(best_restaurants[0]['name'],
-                                                                                         best_restaurants[0][
-                                                                                             'location'])
+                restaurant_count_str) + constants.response_restaurant_name_single.format(result_data[0]['name'],
+                                                                                         result_data[0]['location'])
         else:
             response = constants.response_restaurant_count.format(
-                restaurant_count_str) + constants.response_restaurant_names.format(best_restaurants[0]['name'],
-                                                                                   best_restaurants[0]['location'],
-                                                                                   best_restaurants[1]['name'],
-                                                                                   best_restaurants[1]['location'])
+                restaurant_count_str) + constants.response_restaurant_names.format(result_data[0]['name'],
+                                                                                   result_data[0]['location'],
+                                                                                   result_data[1]['name'],
+                                                                                   result_data[1]['location'])
     if tradeoff_factor == "cuisine":
         if total_restaurants == 0:
             response += constants.response_tradeoff_no_restaurant.format(len(tradeoff_data),
@@ -62,7 +61,7 @@ def response_action(result_data, tradeoff_factor, tradeoff_data):
     else:
         if tradeoff_data:
             restaurant_tradeoff_type_str = ""
-            if tradeoff_data[0][tradeoff_factor] == "average":
+            if tradeoff_data[0][tradeoff_factor].lower() == "average":
                 if tradeoff_factor == "price":
                     restaurant_tradeoff_type_str = "average priced"
                 elif tradeoff_factor == "distance":
