@@ -2,6 +2,7 @@
 import MySQLdb
 import os
 import inspect
+import json
 
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parentdir = os.path.dirname(currentdir)
@@ -56,21 +57,21 @@ class DialogueManager:
                     tradeoff_request_dict[tradeoff_factor] = self.preferences[tradeoff_factor]
                     tradeoff_results = self.get_results(tradeoff_request_dict)
                 result_str = response_action.response_action(main_results, tradeoff_factor, tradeoff_results)
-                return result_str
+                return {"text": result_str, "main_results": main_results, "tradeoff_results": tradeoff_results}
         self.request_info_dict = self.compare_dictionaries(self.request_info_dict, nlu_info_dict)
         self.request_info_dict = self.set_preferences(self.request_info_dict)
         while True:
             required_data = self.request_info()
             if required_data:
                 request_str = request_info_nlg.request_info(required_data)
-                return request_str
+                return {"text": request_str}
             else:
                 break
         print 'To be confirmed ---'
         print self.request_info_dict
         confirm_str = confirm_action.confirm_action(self.request_info_dict)
         self.confirm_flag = True
-        return confirm_str
+        return {"text": confirm_str}
 
     @staticmethod
     def compare_dictionaries(main_data, new_data):
@@ -99,7 +100,7 @@ class DialogueManager:
     def get_results(self, request_info_dict):
         print request_info_dict
         query = "SELECT name, location, rating, cuisine, price, distance from restaurants where cuisine = '{}' and \
-                distance = '{}' and price = '{}'"
+                distance = '{}' and price = '{}' ORDER BY rating DESC"
         query = query.format(request_info_dict['cuisine'].title(), request_info_dict['distance'].upper(), request_info_dict['price'].upper())
         cursor = self.db_connection.get_cursor()
         print "Query:" + query
