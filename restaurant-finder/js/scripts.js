@@ -81,8 +81,30 @@ $(document).ready(function () {
         };
 
         var detailsSuccess = function (data) {
-            if(typeof data == "string") {
-                textToSpeech(data);
+            var formattedData = JSON.parse(data);
+            textToSpeech(formattedData.text);
+            if(formattedData.main_results) {
+                // populate results
+                formattedData.main_results.forEach(function (result) {
+                    var content = "<tr><td>" + result.name + "</td><td>" + result.location + "</td><td>" + result.rating +
+                        "</td><td>" + result.cuisine + "</td><td>" + result.price + "</td>";
+                    $("#result-table").append(content);
+                });
+                $("#result-data").show();
+            } else {
+                $("#result-data").hide();
+            }
+
+            if(formattedData.tradeoff_results) {
+                // populate tradeoff results
+                formattedData.tradeoff_results.forEach(function (result) {
+                    var content = "<tr><td>" + result.name + "</td><td>" + result.location + "</td><td>" + result.rating +
+                        "</td><td>" + result.cuisine + "</td><td>" + result.price + "</td>";
+                    $("#tradeoff-table").append(content);
+                });
+                $("#tradeoff-data").show();
+            } else {
+                $("#tradeoff-data").hide();
             }
         };
 
