@@ -15,5 +15,11 @@ NLU_Classification.NLU_Classifier_Test(global_project_settings.classifier)
 st = "cheap restaurants and average"
 print(NLU_Classification.getLabel(global_project_settings.classifier, st))
 
-st = "no i did not ordered for this"
+st = "give me some nearby restaurants"
+print(NLU_Classification.getLabel(global_project_settings.classifier, st))
+
+st = "give me some restaurants located far from me"
+print(NLU_Classification.getLabel(global_project_settings.classifier, st))
+
+st = "yes"
 print(NLU_Classification.getLabel(global_project_settings.classifier, st))
