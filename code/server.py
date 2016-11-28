@@ -1,6 +1,7 @@
 from nlu import keyword_approach
 # from nlu import NLU_Classification
 from BaseHTTPServer import HTTPServer
+from nlu import global_project_settings
 
 
 class RestaurantServer():
@@ -34,6 +35,10 @@ class RestaurantServer():
             keyword_approach.get_structured_input(training_sentence[0])
         """
         # keyword_approach.get_structured_input("Give me list of restaurants")
+
+        # Init NLU Classifier
+        global_project_settings.init()
+
         server_address = ('127.0.0.1', 8080)
         from request_handler import HTTPRequestHandlerContainer
         HTTPHandlerClass = HTTPRequestHandlerContainer()

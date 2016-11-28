@@ -1,12 +1,12 @@
 from BaseHTTPServer import BaseHTTPRequestHandler
 import json
 from include import utils
-from dialogue import DialogueManager_KeyWord
+from dialogue import DialogueManager_KeyWord, DialogueManager
 
 
 def HTTPRequestHandlerContainer():
 
-    dialogue_manager=None
+    dialogue_manager = None
 
     class HTTPRequestHandler(BaseHTTPRequestHandler):
 
