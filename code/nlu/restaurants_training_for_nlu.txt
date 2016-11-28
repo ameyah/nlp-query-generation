@@ -194,6 +194,9 @@ tell me about places which is at average distance to me.	average
 need a great restaurant which ia at near distance place.	near
 need a great restaurant which ia at far distance place.	far
 need a great restaurant which ia at average distance place.	average
+give me some nearby restaurants	near
+give me some restaurants far from me	far
+give me some restaurants at an average distance from me	far
 yes yeah precisely	yes
 oh yeah exactly	yes
 yes sure	yes
