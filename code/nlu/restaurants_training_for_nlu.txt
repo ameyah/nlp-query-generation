@@ -1,3 +1,13 @@
+indian	indian
+korean	korean
+chinese	chinese
+italian	italian
+mexican	mexican
+I am looking for indian restaurants.	indian
+I am looking for mexican restaurants.	mexican
+I am looking for italian restaurants.	italian
+I am looking for chinese restaurants.	chinese
+I am looking for korean restaurants.	korean
 I want some information on korean restaurants.	korean
 Tell me about the korean restaurants you know about.	korean
 List some korean restaurants.	korean
@@ -38,6 +48,26 @@ Do you know about chinese restaurants	chinese
 Which restaurants serve chinese food	chinese
 I would like to know about restaurants serving chinese type of food.	chinese
 Find me some chinese restaurants.	chinese
+Will you tell me about some korean restaurants.	korean
+Will you tell me about some indian restaurants.	indian
+Will you tell me about some chinese restaurants.	chinese
+Will you tell me about some mexican restaurants.	mexican
+Will you tell me about some italian restaurants.	italian
+Are there any korean restaurants.	korean
+Are there any indian restaurants.	indian
+Are there any mexican restaurants.	mexican
+Are there any italian restaurants.	italian
+Are there any chinese restaurants.	chinese
+Is there ant indian cusine restaurants near by?	indian
+Is there ant korean cusine restaurants near by?	korean
+Is there ant mexican cusine restaurants near by?	mexican
+Is there ant chinese cusine restaurants near by?	chinese
+Is there ant italian cusine restaurants near by?	italian
+i love indian food, are there place where i can go?	indian
+i love chinese food, are there place where i can go?	chinese
+i love korean food, are there place where i can go?	korean
+i love mexican food, are there place where i can go?	mexican
+i love italian food, are there place where i can go?	italian
 I want some information on mexican restaurants.	mexican
 Tell me about the mexican restaurants you know about.	mexican
 List some mexican restaurants.	mexican
@@ -48,6 +78,9 @@ Do you know about mexican restaurants	mexican
 Which restaurants serve mexican food	mexican
 I would like to know about restaurants serving mexican type of food.	mexican
 Find me some mexican restaurants.	mexican
+I am looking for cheap restaurants.	cheap
+I am looking for expensive restaurants.	expensive
+I am looking for average restaurants.	average
 I want some cheap restaurants.	cheap
 Which restaurants are cheap 	cheap
 Only give me all cheap hotels	cheap
@@ -83,11 +116,29 @@ Which restaurants are expensive	expensive
 Only give me all expensive hotels	expensive
 Food places that are expensive priced	expensive
 Can i have restaurants that are expensive	expensive
+give me some information on cheap restaurants.	cheap
+give me some information on expensive restaurants.	expensive
+give me some information on average restaurants.	average
+Any cheap restaurants?	cheap
+Any expensive restaurants?	expensive
+Any average restaurants?	average
+Find me a place which serves cheap priced food.	cheap
+Find me a place which serves expensive priced food.	expensive
+Find me a place which serves average priced food.	average
 Find me some expensive restaurants	expensive
 Need a place which provides expensive food pricing	expensive
 Tell me about some expensive restaurants.	expensive
 Search me some expensive restaurants.	expensive
 Any restaurants with too high cost	expensive
+cheap. cheap
+average.	average
+expensive.	expensive
+near.	near
+average.	average
+far.	far
+I am looking for restaurants near to me.	near
+I am looking for restaurants far to me.	far
+I am looking for restaurants average to me.	average
 costly extravagant fancy high lavish overpriced pricey upscale valuable premium big-ticket excessive exorbitant holdup immoderate inordinate plush posh rich ritzy sky-high steep stiff swank	expensive
 I want to know about restaurants located near short close nearby closeby convenient neighboring me.	near
 Tell me about restaurants located approximately less then 10 miles close short nearby closeby convenient neighboring away from here.	near
@@ -113,6 +164,36 @@ Give me far distant remote far-flung outlaying outlier long way miles afar off f
 What are extreme door distant remote far-flung outlaying outlier long way miles afar off restaurants for me	far
 Give me in far distant remote far-flung outlaying outlier long way miles afar off proximity restaurants	far
 Give far distant remote far-flung outlaying outlier long way miles afar off list of restaurants	far
+Give me hotel which is near to me.	near
+Give me hotel which is far to me.	far
+Give me hotel which is average to me.	average
+find a place to dine which is beside me.	near
+find a place to dine which is far me.	far
+find a place to dine which is average me.	average
+which restaurants are near to me?	near
+which restaurants are far to me?	far
+which restaurants are average to me?	average
+A fine dining place which is near to me?	near
+A fine dining place which is far to me?	far
+A fine dining place which is average to me?	average
+A fine luncheon place which is near to me? near
+A fine luncheon place which is far to me?	far
+A fine luncheon place which is average to me?	average
+show me places to have food, whic are only near to me?	near
+show me places to have food, whic are only far to me?	far
+show me places to have food, whic are only average to me?	average
+Looking for restaurants which are near to me.	near
+Looking for restaurants which are far to me.	far
+Looking for restaurants which are average to me.	average
+near to me.	near
+far to me.	far
+average to me.	average
+tell me about places which is at reasonable distance to me. near
+tell me about places which is at far distance to me.	far
+tell me about places which is at average distance to me.	average
+need a great restaurant which ia at near distance place.	near
+need a great restaurant which ia at far distance place.	far
+need a great restaurant which ia at average distance place.	average		
 yes yeah precisely	yes
 oh yeah exactly	yes
 yes sure	yes
