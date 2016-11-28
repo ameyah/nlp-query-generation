@@ -130,7 +130,7 @@ Need a place which provides expensive food pricing	expensive
 Tell me about some expensive restaurants.	expensive
 Search me some expensive restaurants.	expensive
 Any restaurants with too high cost	expensive
-cheap. cheap
+cheap.	cheap
 average.	average
 expensive.	expensive
 near.	near
@@ -176,7 +176,7 @@ which restaurants are average to me?	average
 A fine dining place which is near to me?	near
 A fine dining place which is far to me?	far
 A fine dining place which is average to me?	average
-A fine luncheon place which is near to me? near
+A fine luncheon place which is near to me?	near
 A fine luncheon place which is far to me?	far
 A fine luncheon place which is average to me?	average
 show me places to have food, whic are only near to me?	near
@@ -188,12 +188,12 @@ Looking for restaurants which are average to me.	average
 near to me.	near
 far to me.	far
 average to me.	average
-tell me about places which is at reasonable distance to me. near
+tell me about places which is at reasonable distance to me.	near
 tell me about places which is at far distance to me.	far
 tell me about places which is at average distance to me.	average
 need a great restaurant which ia at near distance place.	near
 need a great restaurant which ia at far distance place.	far
-need a great restaurant which ia at average distance place.	average		
+need a great restaurant which ia at average distance place.	average
 yes yeah precisely	yes
 oh yeah exactly	yes
 yes sure	yes
