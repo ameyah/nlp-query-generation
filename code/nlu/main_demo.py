@@ -20,3 +20,6 @@ print(NLU_Classification.getLabel(global_project_settings.classifier, st))
 
 st = "give me some restaurants located far from me"
 print(NLU_Classification.getLabel(global_project_settings.classifier, st))
+
+st = "yes"
+print(NLU_Classification.getLabel(global_project_settings.classifier, st))

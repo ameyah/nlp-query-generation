@@ -213,3 +213,8 @@ no	no
 no	no
 no	no
 no I did not ask for this	no
+I want a restaurant which is near	near
+I want a restaurant which is far	far
+I want a restaurant which is at average distance	average
+I want a restaurant which is located far from me	far
+I want a restaurant which is at reasonable distance	near
