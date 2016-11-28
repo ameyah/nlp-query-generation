@@ -198,7 +198,23 @@ give me some nearby restaurants	near
 give me some restaurants far from me	far
 give me some restaurants at an average distance from me	far
 yes yeah precisely	yes
+yes yeah precisely	yes
+yes yeah precisely	yes
+yes yeah precisely	yes
+yes yeah precisely	yes
+yes yeah precisely	yes
+nearby restaurants	near
 oh yeah exactly	yes
 yes sure	yes
 no nope not	no
+nope	no
+No	no
+no	no
+no	no
+no	no
 no I did not ask for this	no
+I want a restaurant which is near	near
+I want a restaurant which is far	far
+I want a restaurant which is at average distance	average
+I want a restaurant which is located far from me	far
+I want a restaurant which is at reasonable distance	near
