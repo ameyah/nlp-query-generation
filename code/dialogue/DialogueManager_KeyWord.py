@@ -77,7 +77,7 @@ class DialogueManager:
                 break
         print 'To be confirmed ---'
         print self.request_info_dict
-        confirm_str = confirm_action.confirm_action(self.request_info_dict)
+        confirm_str = confirm_action.confirm_action_all(self.request_info_dict)
         self.confirm_flag = True
         return {"text": confirm_str}
 
