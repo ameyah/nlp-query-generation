@@ -15,6 +15,7 @@ Created on 16-Nov-2016
 # Which restaurants serve [<Cuisine_TYPE> + (ish/ian/can etc)] food?
 # I would like to know about restaurants serving [<Cuisine_TYPE> + (ish/ian/can etc)] type of food.
 # Find me some [<Cuisine_TYPE> + (ish/ian/can etc)] restaurants.
+import os
 import nltk
 import global_project_settings
 
@@ -28,7 +29,7 @@ def extract_features(post):
 
 def NLU_Classifier_Initiate():
     training_statements = list()
-    with open("restaurants_training_for_nlu.txt") as f:
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "restaurants_training_for_nlu.txt")) as f:
         for line in f:
             data = list()
             data.append(line.split("\t")[0].strip())

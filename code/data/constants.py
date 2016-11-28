@@ -44,7 +44,12 @@ distance_keywords = ['near', 'far', 'average']
 request_price = "Are you looking for a cheap, average or expensive restaurant?"
 request_cuisine = "What cuisine would you prefer?"
 request_distance = "Are you looking for a restaurant which is near, far or at an average distance?"
+
 confirm = "So, would you like {} {} restaurant which is {}?"
+
+confirm_price = "So, would you like restaurant which is {}?"
+confirm_distance = "So, would you like a restaurant which is {}"
+confirm_cuisine = "So, would you like restaurant which serves {} food?"
 
 response_no_restaurants = "Sorry. We could not find any restaurants that match your preferences."
 response_restaurant_count = "I found {} that match your query."
