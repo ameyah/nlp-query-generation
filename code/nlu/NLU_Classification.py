@@ -46,7 +46,8 @@ def NLU_Classifier_Initiate():
     featuresets = [(extract_features(post[0]), post[1]) for post in training_statements]
     # print(featuresets)
     
-    return nltk.DecisionTreeClassifier.train(featuresets)
+    # return nltk.DecisionTreeClassifier.train(featuresets)
+    return nltk.NaiveBayesClassifier.train(featuresets)
 # print(classifier.pretty_format())
 # classifier = nltk.NaiveBayesClassifier.train(featuresets)
 
@@ -85,6 +86,12 @@ def NLU_Classifier_Test(classifier):
     
     ["Give me hotel which is far to me.","far"],
     ["find a place to dine which is far from me.","far"],
+
+    ["Oh yea", "yes"],
+    ["yeah, that is correct", "yes"],
+
+    ["Naah, not that one", "no"],
+    ["nope", "no"],
     
     ]
     

@@ -166,34 +166,34 @@ Give me in far distant remote far-flung outlaying outlier long way miles afar of
 Give far distant remote far-flung outlaying outlier long way miles afar off list of restaurants	far
 Give me hotel which is near to me.	near
 Give me hotel which is far to me.	far
-Give me hotel which is average to me.	average
+Give me hotel which is at an average distance to me.	fair
 find a place to dine which is beside me.	near
 find a place to dine which is far me.	far
-find a place to dine which is average me.	average
+find a place to dine which is at an average distance from me.	fair
 which restaurants are near to me?	near
 which restaurants are far to me?	far
-which restaurants are average to me?	average
+which restaurants are at an average distance to me?	fair
 A fine dining place which is near to me?	near
 A fine dining place which is far to me?	far
-A fine dining place which is average to me?	average
+A fine dining place which is at an average distance to me?	fair
 A fine luncheon place which is near to me?	near
 A fine luncheon place which is far to me?	far
-A fine luncheon place which is average to me?	average
-show me places to have food, whic are only near to me?	near
-show me places to have food, whic are only far to me?	far
-show me places to have food, whic are only average to me?	average
+A fine luncheon place which is at an average distance to me?	fair
+show me places to have food, which are only near to me?	near
+show me places to have food, which are only far to me?	far
+show me places to have food, which are only at an average distance to me?	fair
 Looking for restaurants which are near to me.	near
 Looking for restaurants which are far to me.	far
-Looking for restaurants which are average to me.	average
+Looking for restaurants which are at an average distance to me.	fair
 near to me.	near
 far to me.	far
-average to me.	average
+average distance to me.	fair
 tell me about places which is at reasonable distance to me.	near
 tell me about places which is at far distance to me.	far
-tell me about places which is at average distance to me.	average
+tell me about places which is at average distance to me.	fair
 need a great restaurant which ia at near distance place.	near
 need a great restaurant which ia at far distance place.	far
-need a great restaurant which ia at average distance place.	average
+need a great restaurant which ia at an average distance place.	fair
 give me some nearby restaurants	near
 give me some restaurants far from me	far
 give me some restaurants at an average distance from me	far
