@@ -61,7 +61,7 @@ def evaluate_response_action():
                 print "output: " + response_action.response_action(response_main, 'distance', response_tradeoff)
 
     for cuisine in constants.cuisine_keywords:
-        for distance in constants.price_keywords:
+        for distance in constants.distance_keywords:
             for i in range(0, len(constants.price_keywords)):
                 query = "SELECT name, location, rating, cuisine, price, distance from restaurants where cuisine = '{}' and \
                 distance = '{}' and price = '{}' ORDER BY rating DESC"
@@ -80,8 +80,8 @@ def evaluate_response_action():
                 print "input: %s %s %s" % (cuisine, constants.price_keywords[i], distance)
                 print "output: " + response_action.response_action(response_main, 'price', response_tradeoff)
 
-    for price in constants.cuisine_keywords:
-        for distance in constants.price_keywords:
+    for price in constants.price_keywords:
+        for distance in constants.distance_keywords:
             for i in range(0, len(constants.cuisine_keywords)):
                 query = "SELECT name, location, rating, cuisine, price, distance from restaurants where cuisine = '{}' and \
                 distance = '{}' and price = '{}' ORDER BY rating DESC"
@@ -101,4 +101,7 @@ def evaluate_response_action():
                 print "output: " + response_action.response_action(response_main, 'cuisine', response_tradeoff)
 
 
-evaluate_request_info()
+# evaluate_request_info()
+# evaluate_confirm_action_all()
+# evaluate_confirm_action_single()
+evaluate_response_action()
