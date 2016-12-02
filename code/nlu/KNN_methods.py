@@ -53,7 +53,9 @@ def getLabel(st):
     elif label in global_project_settings.price_list:
         category = "price"
     elif label in global_project_settings.location_list:
-        category = "location"
+        if label == "fair":
+            label = "average"
+        category = "distance"
     else:
         category = "confirm"
 
